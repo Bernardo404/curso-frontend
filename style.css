@@ -1,0 +1,47 @@
+.primeiradiv {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 600px;
+    height: 100%;
+    background-color: darkgrey;
+    opacity: 70%;
+}
+.segundadiv {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 600px;
+    height: 100%;
+}
+.terceiradiv {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 600px;
+    height: 100%;
+    background-color: darkgrey;
+    opacity: 70%;
+}
+.texto {
+    color:darkslateblue;
+}
+.divmae{
+    display: flex; justify-content: center; flex: 1;
+}
+body{
+    background-image: url(https://vaidebolsa.com.br/wp-content/uploads/2019/10/filosofia.jpg.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
