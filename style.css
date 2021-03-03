@@ -1,0 +1,54 @@
+.primeiradiv {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 600px;
+    height: 100%;
+    opacity: 70%;
+    padding-right: 60%;
+    background-color: darkgrey;
+    
+}
+.segundadiv {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 600px;
+    height: 100%;
+    opacity: 70%;
+    padding-left: 60%;
+    text-align: right;
+}
+.terceiradiv {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    width: 600px;
+    height: 100%;
+    opacity: 70%;
+    padding-right: 60%;
+    background-color: darkgrey;
+}
+.texto {
+    color: rgb(0, 0, 0);
+    text-shadow: 0.08em 0.08em rgb(109, 109, 109)
+}
+.divmae{
+    font-family: cursive;
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+body{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
