@@ -1,20 +1,19 @@
-const subtrai = function (a, b) {
-    return a - b;
-}
+//Object
+//acesso as props com ponto
+const user = {
+    nome: 'Usuário',
+    idade: 25,
+    endereco: {
+      rua: 'Rua central',
+      numero: 1
+    },
+    projetos: ['Projeto 1', 'Projeto 2']
+  }  
+  console.log(user.nome)
+  console.log(user.endereco.rua)
+  console.log(user.projetos[1])
 
-const testaZero = (a) => a ? "A variável não é zero" : "A variável é zero";
-
-function testaSinal(a, b) {
-    const func = function (a, b) {
-        return subtrai(a, b);
-    }
-    let resultado3 = func(a, b);
-
-    if (testaZero(resultado3) === "A variável é zero") {
-        console.log("É zero")
-    } else if (a < 0 && b < 0 || a > 0 && b > 0) {
-        console.log("Mesmo sinal")
-    } else {
-        console.log("Sinais diferentes")
-    }
-}
+  //acesso as props com colchetes
+  console.log(user['nome'])
+  console.log(user.endereco['rua'])
+  console.log(user.projetos[1])
