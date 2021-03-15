@@ -1,22 +1,52 @@
-const students = [
-    {id: 1, name: 'John Doe', age: 23, scholarship: false},
-    {id: 2, name: 'Margoe Rose', age: 19, scholarship: true},
-    {id: 3, name: 'Kayle', age: 22, scholarship: true}
+const colaboradores = [
+    {
+        name: 'Juca',
+        idade: 25,
+        cargo: 'front-end'
+    },
+    {
+        name: 'Márcia',
+        idade: 23,
+        cargo: 'back-end'
+    },
+    {
+        name: 'Vitória',
+        idade: 28,
+        cargo: 'designer'
+    },
+    {
+        name: 'Fernando',
+        idade: 19,
+        cargo: 'estagiario'
+    },
+    {
+        name: 'Fabiane',
+        idade: 25,
+        cargo: 'back-end'
+    },
+    {
+        name: 'Jéssica',
+        idade: 23,
+        cargo: 'front-end'
+    },
 ]
-var bolsistas=[" "," "];
-var cont=0;
-students.forEach(function(elem,x,students){
-  let nome=students[x]['name'];
-  let bolsistas= ["",""];
-  console.log(nome)
-  if(students[x]['age']>20){
-    console.log(students[x]['name']);
-  }
-  if(students[x]['scholarship']==true){
-    bolsistas[cont]=nome;
-    cont++;
-    console.log(bolsistas[cont-1])
-  }
+const nomes=colaboradores.slice().map(colaboradores =>{
+  return colaboradores.name;
 });
-
-
+const colfe=colaboradores.slice().filter(colaboradores =>{
+  return colaboradores.cargo === 'front-end';
+});
+const maior23=colaboradores.slice().find(colaboradores =>{
+  return colaboradores.idade > 23;
+});
+const sedemaior=colaboradores.slice().every(colaboradores =>{
+  return colaboradores.idade > 18;
+});
+const estagiario=colaboradores.slice().some(colaboradores =>{
+  return colaboradores.cargo ==='estagiario';
+});
+console.log(nomes);
+console.log(colfe)
+console.log(maior23)
+console.log(sedemaior)
+console.log(estagiario)
