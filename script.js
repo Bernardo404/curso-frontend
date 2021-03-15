@@ -30,23 +30,18 @@ const colaboradores = [
         cargo: 'front-end'
     },
 ]
-const nomes=colaboradores.slice().map(colaboradores =>{
-  return colaboradores.name;
-});
-const colfe=colaboradores.slice().filter(colaboradores =>{
-  return colaboradores.cargo === 'front-end';
-});
-const maior23=colaboradores.slice().find(colaboradores =>{
-  return colaboradores.idade > 23;
-});
-const sedemaior=colaboradores.slice().every(colaboradores =>{
-  return colaboradores.idade > 18;
-});
-const estagiario=colaboradores.slice().some(colaboradores =>{
-  return colaboradores.cargo ==='estagiario';
-});
-console.log(nomes);
-console.log(colfe)
-console.log(maior23)
-console.log(sedemaior)
-console.log(estagiario)
+let Obj = new Object();
+Obj["front-end"]=0;
+Obj["back-end"]=0;
+Obj["designer"]=0;
+Obj["estagiario"]=0;
+const soma = colaboradores.reduce((acc,colaboradores)=> {
+  return acc + colaboradores.idade;
+},0);
+const colcarg = colaboradores.reduce((acc,colaboradores)=> {
+  Obj[colaboradores.cargo]++;
+},0); 
+console.log(soma);
+console.log(Obj)
+  
+  
